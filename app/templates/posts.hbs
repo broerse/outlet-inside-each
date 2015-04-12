@@ -1,0 +1,13 @@
+<div>
+  <hr />
+  <div>
+    <ul>
+      {{#each model as |post|}}
+        <li>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+
+{{outlet}}
+
