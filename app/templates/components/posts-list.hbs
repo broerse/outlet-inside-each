@@ -1,0 +1,13 @@
+<div>
+  <hr />
+  <div>
+    <ul>
+      {{#each posts as |post|}}
+        <li>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</li>
+        {{#if (eq post selectedPost)}}
+          Testing
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</div>
