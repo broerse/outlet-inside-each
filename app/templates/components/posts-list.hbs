@@ -5,7 +5,8 @@
       {{#each posts as |post|}}
         <li>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</li>
         {{#if (eq post.id selectedPost.id)}}
-          Testing
+          {{post.body}}
+          {{#link-to 'posts'}}Back{{/link-to}}
         {{/if}}
       {{/each}}
     </ul>
